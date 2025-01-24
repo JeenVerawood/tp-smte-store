@@ -18,7 +18,7 @@ function Main() {
   }, []);
 
   return (
-    <main className="flex flex-col bg-gray-200 items-center justify-center overflow-hidden relative">
+    <main className="flex flex-col bg-white items-center justify-center overflow-hidden relative">
       {/* Splash Screen */}
       <div
         className={`fixed inset-0 bg-black flex flex-col items-center justify-center z-50 transition-opacity duration-1000 ${
@@ -39,10 +39,6 @@ function Main() {
           showSplash ? "opacity-0" : "opacity-100"
         }`}
       >
-        <div>
-        {/* <div className="font-prompt justify-center flex  text-xl mt-4">เลือกดูสินค้า</div> */}
-
-        </div>
         <div className="min-h-[71vh] md:min-h-[60vh] lg:min-h-[70vh] max-h-[calc(100vh-8rem)] w-full">
           {/* Grid สินค้า */}
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,_minmax(240px,_1fr))] p-2 gap-2 mt-4">

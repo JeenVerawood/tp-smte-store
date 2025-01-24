@@ -47,7 +47,6 @@ function Bag() {
           className="w-full h-full object-contain transition-transform duration-300"
         />
       </div>
-      <h1 className="text-[15px] font-prompt text-center"> 159 BATH </h1>
       {/* ตัวเลือกสินค้า - Scrollable และ Scale (เลื่อนในแกน X) */}
       <div className="mt-4 flex justify-center w-full">
         <div className="flex justify-start h-24 items-center gap-x-4 overflow-y-hidden w-80 mx-auto">
@@ -72,8 +71,10 @@ function Bag() {
       {/* Footer Section */}
       <footer className="bg-black w-full mt-5 flex items-center justify-center px-6 py-4 ">
         <a href="https://forms.gle/QbtviLYjkgU4syy8A" className="w-full">
-          <div className="flex items-center justify-center h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
-            <h1 className="text-white text-[20px] font-prompt text-center">สั่งพรีออเดอร์สินค้า</h1>
+          <div className="flex items-center justify-between h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
+          <h1 className="text-[15px] font-prompt "> 159 BATH </h1>
+
+            <h1 className="text-white text-[20px] w-[50%] font-prompt text-center">สั่งพรีออเดอร์สินค้า</h1>
           </div>
         </a>
       </footer>

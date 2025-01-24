@@ -49,6 +49,7 @@ function Fam() {
           className="w-full h-full object-contain transition-transform duration-300"
         />
       </div>
+      <h1 className="text-[15px] font-prompt text-center"> 299 BATH </h1>
 
       {/* ตัวเลือกสินค้า - Scrollable และ Scale (เลื่อนในแกน X) */}
       <div className="mt-4 flex justify-center w-full">
