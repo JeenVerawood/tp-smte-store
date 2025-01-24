@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"; // Import Link
 import { IoChevronBack } from "react-icons/io5";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { useSwipeable } from "react-swipeable"; // Import Swipeable
-import img1 from "./img/Bag/1.png"
-import img2 from "./img/Bag/2.png"
+import img1 from "./img/Bag/1.png";
+import img2 from "./img/Bag/2.png";
 
 const images = [img1, img2];
 
@@ -27,18 +27,18 @@ function Bag() {
   });
 
   return (
-    <div className="flex flex-col h-[90vh] w-full mt-4">
+    <div className="flex flex-col h-[90vh] w-full mt-2">
       {/* ชื่อสินค้า */}
-      <div className="mb-6 flex justify-between items-center w-full mx-auto h-12 px-6">
+      <div className="mb-2 flex justify-between items-center w-full mx-auto h-12 px-6">
         <Link to="/">
           <IoChevronBack size={24} className="text-gray-700" />
         </Link>
-        <h1 className="text-3xl text-center font-karantina">TP SMTE BAG</h1>
+        <h1 className="text-3xl text-center font-karantina">TP BAG</h1>
       </div>
 
       {/* กล่องรูปภาพใหญ่ */}
       <div
-        className="w-96 h-96 border border-solid border-gray-400 rounded-lg mb-4 mx-auto flex items-center justify-center overflow-hidden"
+        className="w-80 h-80 border border-solid border-gray-400 rounded-lg mx-auto flex items-center justify-center overflow-hidden"
         {...handlers}
       >
         <img
@@ -48,27 +48,29 @@ function Bag() {
         />
       </div>
 
-     {/* ตัวเลือกสินค้า - Scrollable และ Scale */}
-      <div className="mt-4 flex justify-center">
-        <div className="flex justify-center items-center gap-x-4">
+      {/* ตัวเลือกสินค้า - Scrollable และ Scale (เลื่อนในแกน X) */}
+      <div className="mt-4 flex justify-center w-full">
+        <div className="flex justify-start h-24 items-center gap-x-4 overflow-y-hidden w-80 mx-auto">
           {images.map((image, index) => (
             <div
               key={index}
-              className={`min-w-[80px] h-20 border border-solid border-gray-400 flex justify-center items-center rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 ${
+              className={`w-[80px] h-20 border border-solid border-gray-400 flex justify-center items-center rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 ${
                 currentImageIndex === index ? "scale-110 border-blue-500" : ""
               }`}
               onClick={() => setCurrentImageIndex(index)}
             >
-              <img src={image} alt={`Thumbnail ${index}`} className="w-full h-full object-cover" />
+              <img
+                src={image}
+                alt={`Thumbnail ${index}`}
+                className="w-full h-full object-cover"
+              />
             </div>
           ))}
         </div>
       </div>
 
-
-
       {/* Footer Section */}
-      <footer className="bg-black w-full flex items-center justify-between px-6 py-4 mt-auto">
+      <footer className="bg-black w-full mt-5 flex items-center justify-between px-6 py-4 mt-auto">
         {/* ข้อความเกี่ยวกับพรีออเดอร์ */}
         <div className="text-white font-prompt">
           <h1 className="text-xl font-semibold">สั่งพรีออเดอร์สินค้า</h1>

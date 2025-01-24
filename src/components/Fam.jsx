@@ -3,13 +3,12 @@ import { Link } from "react-router-dom"; // Import Link
 import { IoChevronBack } from "react-icons/io5";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { useSwipeable } from "react-swipeable"; // Import Swipeable
-import img1 from "./img/fam/1.png"
-import img2 from "./img/fam/2.png"
-import img3 from "./img/fam/3.png"
-import img4 from "./img/fam/Asset 4 (1).png"
+import img1 from "./img/fam/1.png";
+import img2 from "./img/fam/2.png";
+import img3 from "./img/fam/3.png";
+import img4 from "./img/fam/Asset 4 (1).png";
 
-
-const images = [img1, img2 , img3 , img4];
+const images = [img1, img2, img3, img4];
 
 function Fam() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -41,7 +40,7 @@ function Fam() {
 
       {/* กล่องรูปภาพใหญ่ */}
       <div
-        className="w-96 h-96 border border-solid border-gray-400 rounded-lg  mx-auto flex items-center justify-center overflow-hidden"
+        className="w-80 h-80 border border-solid border-gray-400 rounded-lg mx-auto flex items-center justify-center overflow-hidden"
         {...handlers}
       >
         <img
@@ -51,27 +50,31 @@ function Fam() {
         />
       </div>
 
-     {/* ตัวเลือกสินค้า - Scrollable และ Scale */}
-      <div className="mt-4 flex justify-center">
-        <div className="flex justify-center items-center gap-x-4">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={`min-w-[80px] h-20 border border-solid border-gray-400 flex justify-center items-center rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 ${
-                currentImageIndex === index ? "scale-110 border-blue-500" : ""
-              }`}
-              onClick={() => setCurrentImageIndex(index)}
-            >
-              <img src={image} alt={`Thumbnail ${index}`} className="w-full h-full object-cover" />
-            </div>
-          ))}
-        </div>
+      {/* ตัวเลือกสินค้า - Scrollable และ Scale (เลื่อนในแกน X) */}
+      <div className="mt-4 flex justify-center w-full">
+      <div className="flex justify-start items-center gap-x-4 overflow-y-auto w-80">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`w-[80px] h-20 border border-solid border-gray-400 flex justify-center items-center rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 ${
+              currentImageIndex === index ? "scale-110 border-blue-500" : ""
+            }`}
+            onClick={() => setCurrentImageIndex(index)}
+          >
+            <img
+              src={image}
+              alt={`Thumbnail ${index}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
       </div>
+    </div>
 
 
 
       {/* Footer Section */}
-      <footer className="bg-black w-full mt-5 flex items-center justify-between px-6 py-4 ">
+      <footer className="bg-black w-full mt-5 flex items-center justify-between px-6 py-4 mt-auto">
         {/* ข้อความเกี่ยวกับพรีออเดอร์ */}
         <div className="text-white font-prompt">
           <h1 className="text-xl font-semibold">สั่งพรีออเดอร์สินค้า</h1>
