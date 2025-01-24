@@ -69,7 +69,7 @@ function Bag() {
       </div>
 
       {/* Footer Section */}
-      <footer className="bg-black w-full mt-5 flex items-center justify-center px-6 py-4 ">
+      <footer className="bg-black w-full mt-5 flex items-center justify-between px-6 py-4 ">
       <h1 className="text-[17px] text-white font-prompt "> 159 BATH </h1>
         <a href="https://forms.gle/QbtviLYjkgU4syy8A" className="w-[70%]">
           <div className="flex items-center justify-between h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
