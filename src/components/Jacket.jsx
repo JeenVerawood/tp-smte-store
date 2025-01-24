@@ -30,9 +30,9 @@ function Fam() {
   });
 
   return (
-    <div className="flex flex-col h-[90vh] w-full mt-4">
+    <div className="flex flex-col h-[90vh] w-full mt-2">
       {/* ชื่อสินค้า */}
-      <div className="mb-6 flex justify-between items-center w-full mx-auto h-12 px-6">
+      <div className="mb-2 flex justify-between items-center w-full mx-auto h-12 px-6">
         <Link to="/">
           <IoChevronBack size={24} className="text-gray-700" />
         </Link>
@@ -71,7 +71,7 @@ function Fam() {
 
 
       {/* Footer Section */}
-      <footer className="bg-black w-full flex items-center justify-between px-6 py-4 mt-auto">
+      <footer className="bg-black mt-5  w-full flex items-center justify-between px-6 py-4 ">
         {/* ข้อความเกี่ยวกับพรีออเดอร์ */}
         <div className="text-white font-prompt">
           <h1 className="text-xl font-semibold">สั่งพรีออเดอร์สินค้า</h1>
