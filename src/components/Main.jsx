@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBasketShopping } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 import Jacket1 from "./img/Jacket/1.png";
 import Bag1 from "./img/Bag/1.png";
 import Jersey1 from"./img/jersey/1.png"
@@ -70,15 +71,18 @@ function Main() {
         </div>
 
         {/* Footer */}
-        <footer className="h-24 w-screen bg-black top- sticky flex items-center justify-between px-6 py-4">
-          <div className="text-white font-prompt">
-            <h1 className="text-xl font-semibold">สั่งพรีออเดอร์สินค้า</h1>
-            <h1 className="text-sm">ส่งปลายทาง + 60 บาท</h1>
+        <footer className="bg-black w-full mt-5 flex items-center gap-10 justify-center px-6 py-4 ">
+        <a href="https://www.facebook.com/TPSMTE" className="w-[15%]">
+          <div className="flex items-center justify-center h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
+            <h1 className="text-white text-[20px] font-prompt text-center"><FaFacebook /></h1>
           </div>
-          <div className="flex items-center justify-center h-14 w-14 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors">
-            <FaBasketShopping size={24} className="text-white" />
+        </a>
+        <a href="https://forms.gle/nPwRX2beEUh2oenFA" className="w-[70%]">
+          <div className="flex items-center justify-center h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
+            <h1 className="text-white text-[15px] font-prompt text-center">สั่งพรีออเดอร์สินค้า</h1>
           </div>
-        </footer>
+        </a>
+      </footer>
       </div>
     </main>
   );

@@ -33,7 +33,7 @@ function Bag() {
         <Link to="/">
           <IoChevronBack size={24} className="text-gray-700" />
         </Link>
-        <h1 className="text-3xl text-center font-karantina">TP BAG</h1>
+        <h1 className="text-3xl text-center font-karantina">TP SMTE TOTE BAG</h1>
       </div>
 
       {/* กล่องรูปภาพใหญ่ */}
@@ -70,19 +70,14 @@ function Bag() {
       </div>
 
       {/* Footer Section */}
-      <footer className="bg-black w-full mt-5 flex items-center justify-between px-6 py-4 mt-auto">
-        {/* ข้อความเกี่ยวกับพรีออเดอร์ */}
-        <div className="text-white font-prompt">
-          <h1 className="text-xl font-semibold">สั่งพรีออเดอร์สินค้า</h1>
-          <h1 className="text-sm">ส่งปลายทาง + 60 บาท</h1>
-        </div>
-
-        {/* ไอคอนตะกร้าสินค้า */}
-        <div className="flex items-center justify-center h-14 w-auto gap-x-2 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors">
-          <h1 className="text-white text-[20px] font-prompt">229</h1>
-          <RiMoneyDollarCircleFill className="text-white text-[20px]" />
-        </div>
+      <footer className="bg-black w-full mt-5 flex items-center justify-center px-6 py-4 ">
+        <a href="https://forms.gle/nPwRX2beEUh2oenFA" className="w-full">
+          <div className="flex items-center justify-center h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
+            <h1 className="text-white text-[20px] font-prompt text-center">สั่งพรีออเดอร์สินค้า</h1>
+          </div>
+        </a>
       </footer>
+
     </div>
   );
 }
