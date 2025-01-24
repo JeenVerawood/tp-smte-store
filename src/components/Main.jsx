@@ -71,18 +71,6 @@ function Main() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-black w-full mt-5 flex items-center gap-10 justify-center px-6 py-4 ">
-        <a href="https://www.facebook.com/TPSMTE" className="w-[15%]">
-          <div className="flex items-center justify-center h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
-            <h1 className="text-white text-[20px] font-prompt text-center"><FaFacebook /></h1>
-          </div>
-        </a>
-        <a href="https://forms.gle/nPwRX2beEUh2oenFA" className="w-[70%]">
-          <div className="flex items-center justify-center h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
-            <h1 className="text-white text-[15px] font-prompt text-center">สั่งพรีออเดอร์สินค้า</h1>
-          </div>
-        </a>
-      </footer>
       </div>
     </main>
   );

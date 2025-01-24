@@ -74,7 +74,7 @@ function Polo() {
 
       {/* Footer Section */}
       <footer className="bg-black w-full mt-5 flex items-center justify-center px-6 py-4 ">
-        <a href="https://forms.gle/nPwRX2beEUh2oenFA" className="w-full">
+        <a href="https://forms.gle/QQfjaJKmrATbXn488" className="w-full">
           <div className="flex items-center justify-center h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
             <h1 className="text-white text-[20px] font-prompt text-center">สั่งพรีออเดอร์สินค้า</h1>
           </div>
