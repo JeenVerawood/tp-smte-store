@@ -8,8 +8,9 @@ import img2 from "./img/Jacket/2.png";
 import img3 from "./img/Jacket/3.png";
 import img4 from "./img/Jacket/4.png";
 import img5 from "./img/Jacket/5.png";
+import img6 from "./img/Jacket/6.png";
 
-const images = [img1, img2, img3, img4, img5];
+const images = [img1, img2, img3, img4, img5, img6];
 
 function Jacket() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

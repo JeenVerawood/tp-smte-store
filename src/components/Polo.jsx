@@ -7,8 +7,9 @@ import img1 from "./img/jersey/1.png";
 import img2 from "./img/jersey/2.png";
 import img3 from "./img/jersey/3.png";
 import img4 from "./img/jersey/4.png";
+import img5 from "./img/jersey/5.png";
 
-const images = [img1, img2, img3, img4];
+const images = [img1, img2, img3, img4, img5];
 
 function Polo() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
