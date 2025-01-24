@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { FaBasketShopping } from "react-icons/fa6";
 import Jacket1 from "./img/Jacket/1.png";
 import Bag1 from "./img/Bag/1.png";
-
+import Jersey1 from"./img/jersey/1.png"
+import Fam1 from "./img/fam/1.png"
 function Main() {
   const [showSplash, setShowSplash] = useState(true); // ควบคุม Splash Screen
 
@@ -41,26 +42,27 @@ function Main() {
         <div className="min-h-[69vh] md:min-h-[60vh] lg:min-h-[70vh] max-h-[calc(100vh-8rem)] w-full">
           {/* Grid สินค้า */}
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,_minmax(240px,_1fr))] p-2 gap-2 mt-4">
-            <Link to="/Jacket">
-              <div className="w-full rounded-lg h-48 bg-white border border-solid border-gray-400 flex items-center justify-center hover:scale-110">
-                <img src={Jacket1} className="scale-90 w-full h-full object-contain " alt="Polo" />
-              </div>
-            </Link>
-            <Link to="/Bag">
-              <div className="w-full rounded-lg h-48 bg-white border border-solid border-gray-400 flex items-center justify-center">
-                <img src={Bag1} alt="Polo" className="scale-90 w-full h-full object-contain" />
-              </div>
-            </Link>
-            <Link to="/bag">
-              <div className="w-full rounded-lg h-48 bg-white border border-solid border-gray-400 flex items-center justify-center">
-                <img src="" alt="Polo" className="scale-90 w-full h-full object-contain"/>
-              </div>
-            </Link>
-            <Link to="/jacket">
-              <div className="w-full rounded-lg h-48 bg-white border border-solid border-gray-400 flex items-center justify-center">
-                <img src={Jacket1} className="scale-90 w-full h-full object-contain " alt="Polo" />
-              </div>
-            </Link>
+          <Link to="/polo">
+            <div className="w-full rounded-lg h-48 bg-gray-100 border border-solid border-gray-400 flex items-center justify-center hover:scale-110 shadow-lg">
+              <img src={Jersey1} className="scale-90 w-full h-full object-contain " alt="Polo" />
+            </div>
+          </Link>
+          <Link to="/Bag">
+            <div className="w-full rounded-lg h-48 bg-gray-100  border border-solid border-gray-400 flex items-center justify-center shadow-lg">
+              <img src={Bag1} alt="Polo" className="scale-90 w-full h-full object-contain" />
+            </div>
+          </Link>
+          <Link to="/fam">
+            <div className="w-full rounded-lg h-48 bg-gray-100  border border-solid border-gray-400 flex items-center justify-center shadow-lg">
+              <img src={Fam1} alt="Polo" className="scale-90 w-full h-full object-contain" />
+            </div>
+          </Link>
+          <Link to="/jacket">
+            <div className="w-full rounded-lg h-48 bg-gray-100  border border-solid border-gray-400 flex items-center justify-center shadow-lg">
+              <img src={Jacket1} className="scale-90 w-full h-full object-contain " alt="Polo" />
+            </div>
+          </Link>
+                
           </div>
         </div>
 
