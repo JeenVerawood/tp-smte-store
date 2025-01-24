@@ -52,7 +52,7 @@ function Fam() {
 
       {/* ตัวเลือกสินค้า - Scrollable และ Scale (เลื่อนในแกน X) */}
       <div className="mt-4 flex justify-center w-full">
-      <div className="flex justify-start items-center gap-x-4 overflow-y-auto w-80">
+      <div className="flex justify-start items-center gap-x-4 overflow-y-hidden w-80">
         {images.map((image, index) => (
           <div
             key={index}
@@ -83,7 +83,7 @@ function Fam() {
 
         {/* ไอคอนตะกร้าสินค้า */}
         <div className="flex items-center justify-center h-14 w-auto gap-x-2 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors">
-          <h1 className="text-white text-[20px] font-prompt">229</h1>
+          <h1 className="text-white text-[20px] font-prompt">299</h1>
           <RiMoneyDollarCircleFill className="text-white text-[20px]" />
         </div>
       </footer>

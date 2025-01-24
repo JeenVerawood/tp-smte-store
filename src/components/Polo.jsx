@@ -29,13 +29,13 @@ function Polo() {
   });
 
   return (
-    <div className="flex flex-col h-[90vh] w-full mt-2">
+    <div className="flex flex-col h-[90vh] bg-gray-200 w-full mt-2">
       {/* ชื่อสินค้า */}
       <div className="mb-2 flex justify-between items-center w-full mx-auto h-12 px-6">
         <Link to="/">
           <IoChevronBack size={24} className="text-gray-700" />
         </Link>
-        <h1 className="text-3xl text-center font-karantina">TP POLO</h1>
+        <h1 className="text-3xl text-center font-karantina">TP JERSEY</h1>
       </div>
 
       {/* กล่องรูปภาพใหญ่ */}
@@ -52,7 +52,7 @@ function Polo() {
 
       {/* ตัวเลือกสินค้า - Scrollable และ Scale (เลื่อนในแกน X) */}
       <div className="mt-4 flex justify-center w-full">
-        <div className="flex justify-start items-center gap-x-4 overflow-x-auto w-80 mx-auto">
+        <div className="flex justify-start items-center gap-x-4 overflow-x-hidden w-80 mx-auto">
           {images.map((image, index) => (
             <div
               key={index}

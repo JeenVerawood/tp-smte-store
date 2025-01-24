@@ -53,7 +53,7 @@ function Jacket() {
 
       {/* ตัวเลือกสินค้า - Scrollable และ Scale (เลื่อนในแกน X) */}
       <div className="mt-4 flex justify-center w-full">
-        <div className="flex justify-start items-center gap-x-4 overflow-y-auto w-80 mx-auto">
+        <div className="flex justify-start items-center gap-x-4 overflow-y-hidden w-80 mx-auto">
           {images.map((image, index) => (
             <div
               key={index}
