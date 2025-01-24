@@ -3,15 +3,15 @@ import { Link } from "react-router-dom"; // Import Link
 import { IoChevronBack } from "react-icons/io5";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { useSwipeable } from "react-swipeable"; // Import Swipeable
-import img1 from "./img/Jacket/1.png";
-import img2 from "./img/Jacket/2.png";
-import img3 from "./img/Jacket/3.png";
-import img4 from "./img/Jacket/4.png";
-import img5 from "./img/Jacket/5.png";
+import img1 from "./img/fam/1.png"
+import img2 from "./img/fam/2.png"
+import img3 from "./img/fam/3.png"
+import img4 from "./img/fam/Asset 4 (1).png"
 
-const images = [img1, img2, img3, img4, img5];
 
-function Jacket() {
+const images = [img1, img2 , img3 , img4];
+
+function Fam() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // ฟังก์ชันเปลี่ยนรูปภาพ
@@ -36,7 +36,7 @@ function Jacket() {
         <Link to="/">
           <IoChevronBack size={24} className="text-gray-700" />
         </Link>
-        <h1 className="text-3xl text-center font-karantina">Track Jacket</h1>
+        <h1 className="text-3xl text-center font-karantina">TP BRIEFCASE</h1>
       </div>
 
       {/* กล่องรูปภาพใหญ่ */}
@@ -51,20 +51,24 @@ function Jacket() {
         />
       </div>
 
-      {/* ตัวเลือกสินค้า - Scrollable และ Scale */}
-      <div className="mt-4 h-24 w-full flex gap-x-4 px-4 overflow-x-auto">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`min-w-[80px] h-20 border border-solid border-gray-400 rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 ${
-              currentImageIndex === index ? "scale-110 border-blue-500" : ""
-            }`}
-            onClick={() => setCurrentImageIndex(index)}
-          >
-            <img src={image} alt={`Thumbnail ${index}`} className="w-full h-full object-cover" />
-          </div>
-        ))}
+     {/* ตัวเลือกสินค้า - Scrollable และ Scale */}
+      <div className="mt-4 flex justify-center">
+        <div className="flex justify-center items-center gap-x-4">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`min-w-[80px] h-20 border border-solid border-gray-400 flex justify-center items-center rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 ${
+                currentImageIndex === index ? "scale-110 border-blue-500" : ""
+              }`}
+              onClick={() => setCurrentImageIndex(index)}
+            >
+              <img src={image} alt={`Thumbnail ${index}`} className="w-full h-full object-cover" />
+            </div>
+          ))}
+        </div>
       </div>
+
+
 
       {/* Footer Section */}
       <footer className="bg-black w-full flex items-center justify-between px-6 py-4 mt-auto">
@@ -84,4 +88,4 @@ function Jacket() {
   );
 }
 
-export default Jacket;
+export default Fam;

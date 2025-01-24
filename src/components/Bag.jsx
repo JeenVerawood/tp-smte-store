@@ -48,20 +48,23 @@ function Bag() {
         />
       </div>
 
-      {/* ตัวเลือกสินค้า - Scrollable และ Scale */}
-      <div className="mt-4 h-24 w-full flex justify-center gap-x-4 px-4">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`min-w-[80px] h-20 border border-solid border-gray-400 rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 ${
-              currentImageIndex === index ? "scale-110 border-blue-500" : ""
-            }`}
-            onClick={() => setCurrentImageIndex(index)}
-          >
-            <img src={image} alt={`Thumbnail ${index}`} className="w-full h-full object-cover" />
-          </div>
-        ))}
+     {/* ตัวเลือกสินค้า - Scrollable และ Scale */}
+      <div className="mt-4 flex justify-center">
+        <div className="flex justify-center items-center gap-x-4">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`min-w-[80px] h-20 border border-solid border-gray-400 flex justify-center items-center rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 ${
+                currentImageIndex === index ? "scale-110 border-blue-500" : ""
+              }`}
+              onClick={() => setCurrentImageIndex(index)}
+            >
+              <img src={image} alt={`Thumbnail ${index}`} className="w-full h-full object-cover" />
+            </div>
+          ))}
+        </div>
       </div>
+
 
 
       {/* Footer Section */}

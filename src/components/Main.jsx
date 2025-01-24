@@ -38,8 +38,11 @@ function Main() {
           showSplash ? "opacity-0" : "opacity-100"
         }`}
       >
-        <div className="font-prompt justify-center flex  text-xl mt-4">เลือกดูสินค้า</div>
-        <div className="min-h-[69vh] md:min-h-[60vh] lg:min-h-[70vh] max-h-[calc(100vh-8rem)] w-full">
+        <div>
+        {/* <div className="font-prompt justify-center flex  text-xl mt-4">เลือกดูสินค้า</div> */}
+
+        </div>
+        <div className="min-h-[66vh] md:min-h-[60vh] lg:min-h-[70vh] max-h-[calc(100vh-8rem)] w-full">
           {/* Grid สินค้า */}
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,_minmax(240px,_1fr))] p-2 gap-2 mt-4">
           <Link to="/polo">
