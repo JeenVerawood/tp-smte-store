@@ -41,8 +41,8 @@ function Main() {
       >
         <div className="min-h-[71vh] md:min-h-[60vh] lg:min-h-[70vh] max-h-[calc(100vh-8rem)] w-full">
           <div> 
-            <h1 className="text-2xl font-bold mb-4">ปิดรับพรีออเดอร์</h1>
-            <h4 className="text-lg mb-4">
+            <h1 className="text-2xl flex justify-center font-prompt text-center font-bold mb-4">ปิดรับพรีออเดอร์</h1>
+            <h4 className=" text-center flex justify-center font-prompt text-lg mb-4">
               ขอบคุณสำหรับการสั่งจองพรีออเดอร์ของทุกท่านหวังว่าทางเราจะเปิดให้ทุกท่านใช้บริการอีกครั้ง
             </h4>
           </div>
