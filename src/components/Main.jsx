@@ -40,7 +40,12 @@ function Main() {
         }`}
       >
         <div className="min-h-[71vh] md:min-h-[60vh] lg:min-h-[70vh] max-h-[calc(100vh-8rem)] w-full">
-          {/* Grid สินค้า */}
+          <div> 
+            <h1 className="text-2xl font-bold mb-4">ปิดรับพรีออเดอร์</h1>
+            <h4 className="text-lg mb-4">
+              ขอบคุณสำหรับการสั่งจองพรีออเดอร์ของทุกท่านหวังว่าทางเราจะเปิดให้ทุกท่านใช้บริการอีกครั้ง
+            </h4>
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,_minmax(240px,_1fr))] p-2 gap-2 mt-4">
           <Link to="/polo">
             <div className="w-full rounded-lg h-48 bg-gray-100 border border-solid border-gray-400 flex items-center justify-center hover:scale-110 shadow-lg">
@@ -62,11 +67,8 @@ function Main() {
               <img src={Jacket1} className="scale-90 w-full h-full object-contain " alt="Polo" />
             </div>
           </Link>
-                
           </div>
         </div>
-
-        {/* Footer */}
       </div>
     </main>
   );
