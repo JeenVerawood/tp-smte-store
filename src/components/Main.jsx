@@ -6,6 +6,7 @@ import Jacket1 from "./img/Jacket/1.png";
 import Bag1 from "./img/Bag/1.png";
 import Jersey1 from"./img/jersey/1.png"
 import Fam1 from "./img/fam/1.png"
+
 function Main() {
   const [showSplash, setShowSplash] = useState(true); // ควบคุม Splash Screen
 
@@ -18,7 +19,7 @@ function Main() {
   }, []);
 
   return (
-    <main className="flex flex-col bg-white items-center justify-center overflow-hidden relative">
+    <main className="flex flex-col bg-white items-center justify-center overflow-hidden relative h-screen">
       {/* Splash Screen */}
       <div
         className={`fixed inset-0 bg-black flex flex-col items-center justify-center z-50 transition-opacity duration-1000 ${
@@ -39,12 +40,15 @@ function Main() {
           showSplash ? "opacity-0" : "opacity-100"
         }`}
       >
-        <div className="min-h-[71vh] md:min-h-[60vh] items-center lg:min-h-[70vh] max-h-[calc(100vh-8rem)] w-full">
-          <div> 
-            <h1 className="text-2xl flex justify-center font-prompt text-center font-bold mb-4 mt-5 text-red">ปิดรับพรีออเดอร์</h1>
-            <h4 className=" text-center flex justify-center font-prompt text-lg mb-4">
+        <div className="flex flex-col justify-center items-center min-h-screen">
+          <div className="text-center">
+            <h1 className="text-2xl font-prompt font-bold text-red-600 mb-4">
+              ปิดรับพรีออเดอร์
+            </h1>
+            <h4 className="text-lg font-prompt mb-4">
               ขอบคุณสำหรับการสั่งจองพรีออเดอร์ของทุกท่าน หวังว่าทางเราจะเปิดให้ทุกท่านใช้บริการอีกครั้ง
             </h4>
+            {/* Optional: Add a button or link to close or return */}
           </div>
         </div>
       </div>
