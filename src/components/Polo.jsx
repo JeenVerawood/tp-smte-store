@@ -74,7 +74,7 @@ function Polo() {
       
       <footer className="bg-black w-full mt-5 flex items-center justify-between px-6 py-4 ">
       <h1 className="text-[15px] text-white font-prompt "> 299 BATH </h1>
-        <a href="" className="w-[70%]">
+        <a href="8ฃ" className="w-[70%]">
           <div className="flex items-center justify-center h-14 px-10 bg-gray-700 rounded-lg cursor-pointer hover:bg-gray-600 transition-colors w-full max-w-[300px] mx-auto">
             <h1 className="text-white text-[15px] font-prompt text-center">สั่งพรีออเดอร์สินค้า</h1>
           </div>
