@@ -42,12 +42,28 @@ function Main() {
       >
         <div className="flex flex-col justify-center items-center min-h-screen">
           <div className="text-center">
-            <h1 className="text-2xl font-prompt font-bold text-red-600 mb-4">
-              ปิดรับพรีออเดอร์
-            </h1>
-            <h4 className="text-lg font-prompt mb-4">
-              ขอบคุณสำหรับการสั่งจองพรีออเดอร์ของทุกท่าน หวังว่าทางเราจะเปิดให้ทุกท่านใช้บริการอีกครั้ง
-            </h4>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,_minmax(240px,_1fr))] p-2 gap-2 mt-4">
+          <Link to="/polo">
+            <div className="w-full rounded-lg h-48 bg-gray-100 border border-solid border-gray-400 flex items-center justify-center hover:scale-110 shadow-lg">
+              <img src={Jersey1} className="scale-90 w-full h-full object-contain " alt="Polo" />
+            </div>
+          </Link>
+          <Link to="/Bag">
+            <div className="w-full rounded-lg h-48 bg-gray-100  border border-solid border-gray-400 flex items-center justify-center shadow-lg">
+              <img src={Bag1} alt="Polo" className="scale-90 w-full h-full object-contain" />
+            </div>
+          </Link>
+          <Link to="/fam">
+            <div className="w-full rounded-lg h-48 bg-gray-100  border border-solid border-gray-400 flex items-center justify-center shadow-lg">
+              <img src={Fam1} alt="Polo" className="scale-90 w-full h-full object-contain" />
+            </div>
+          </Link>
+          <Link to="/jacket">
+            <div className="w-full rounded-lg h-48 bg-gray-100  border border-solid border-gray-400 flex items-center justify-center shadow-lg">
+              <img src={Jacket1} className="scale-90 w-full h-full object-contain " alt="Polo" />
+            </div>
+          </Link>
+          </div>
             {/* Optional: Add a button or link to close or return */}
           </div>
         </div>

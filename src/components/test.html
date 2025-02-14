@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;   
+        }
+        #box1{
+            width: 50%;
+            height: 10vh;
+            background-color: aliceblue ;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            padding: 0 35px;
+        }
+        #app{
+            width: 50%;
+            height: 10vh;
+            background-color: aliceblue ;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" onclick="openbox()">
+        <div>
+            <h1 id="testt">test-bropdownbox</h1>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        </div>
+        <div id="cop">
+            open
+        </div>
+    </div>
+
+    <script>
+        function openbox() {
+            const text = document.getElementById("testt");
+            const box1open = document.getElementById("box1");
+            const closeopen = document.getElementById("cop"); 
+            if(box1open.style.height === "10vh"){
+                box1open.style.height = "15vh" ;
+                text.textContent= "asdadsds";
+            }else{
+                box1open.style.height = "20vh" ; 
+                text.textContent= "test-bropdownbox";
+                closeopen.textContent= "close";
+
+            }            
+        }
+
+        
+    </script>
+</body>
+</html>
