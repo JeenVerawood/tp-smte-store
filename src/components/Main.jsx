@@ -43,7 +43,8 @@ function Main() {
         <div className="flex flex-col justify-center items-center min-h-screen">
           <div className="text-center">
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-[repeat(auto-fill,_minmax(240px,_1fr))] p-2 gap-2 mt-4">
-          <Link to="/polo">
+            <h1 className="text-4xl">ประกาศการรับของได้ที่ IG : TPSMTESTORE </h1>
+          {/* <Link to="/polo">
             <div className="w-full rounded-lg h-48 bg-gray-100 border border-solid border-gray-400 flex items-center justify-center hover:scale-110 shadow-lg">
               <img src={Jersey1} className="scale-90 w-full h-full object-contain " alt="Polo" />
             </div>
@@ -62,7 +63,7 @@ function Main() {
             <div className="w-full rounded-lg h-48 bg-gray-100  border border-solid border-gray-400 flex items-center justify-center shadow-lg">
               <img src={Jacket1} className="scale-90 w-full h-full object-contain " alt="Polo" />
             </div>
-          </Link>
+          </Link> */}
           </div>
             {/* Optional: Add a button or link to close or return */}
           </div>
